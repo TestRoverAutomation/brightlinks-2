@@ -31,13 +31,10 @@ export default function ContactPage() {
               <form
                 name="contact"
                 method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
                 action="/contact?success=true"
                 noValidate
               >
                 <input type="hidden" name="form-name" value="contact" />
-                <input name="bot-field" style={{ display: 'none' }} />
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
                   <div>
