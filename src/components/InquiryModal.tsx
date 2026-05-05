@@ -111,15 +111,10 @@ export default function InquiryModal() {
             </div>
           ) : (
             <form
-              name="inquiry"
-              method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
               noValidate
             >
               <input type="hidden" name="form-name" value="inquiry" />
-              <input type="hidden" name="bot-field" style={{ display: 'none' }} />
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                 <div>

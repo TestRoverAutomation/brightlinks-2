@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="6" fill="#1B2B6B"/>
+  <!-- Left chain link - turquoise -->
+  <rect x="2" y="9" width="16" height="14" rx="7" fill="none" stroke="#00A8CC" stroke-width="2.5"/>
+  <!-- Right chain link - orange -->
+  <rect x="14" y="9" width="16" height="14" rx="7" fill="#1B2B6B" stroke="#FF6B2B" stroke-width="2.5"/>
+  <!-- Interlock mask -->
+  <rect x="14" y="11.5" width="5" height="9" fill="#1B2B6B"/>
+  <rect x="14" y="11.5" width="5" height="9" fill="none" stroke="#00A8CC" stroke-width="2.5"/>
+</svg>

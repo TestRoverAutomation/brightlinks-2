@@ -20,6 +20,10 @@ export const metadata: Metadata = {
   },
   description: 'BrightLinks UK delivers managed IT services, cybersecurity, cloud solutions, and hardware to businesses across the UK. Based in London. Call 0208 127 1740.',
   keywords: ['IT solutions UK', 'managed IT services London', 'cybersecurity UK', 'cloud solutions', 'IT support London', 'BrightLinks UK'],
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+  },
   authors: [{ name: 'BrightLinks UK' }],
   creator: 'BrightLinks UK',
   openGraph: {
@@ -46,6 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-GB" className={inter.variable}>
       <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="theme-color" content="#1B2B6B" />
         <script
           type="application/ld+json"
