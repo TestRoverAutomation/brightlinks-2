@@ -38,7 +38,6 @@ export default function Header() {
               <Phone size={13} aria-hidden="true" />{SITE.phone}
             </a>
           </div>
-          <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.75rem' }}>{SITE.address}</span>
         </div>
       </div>
 

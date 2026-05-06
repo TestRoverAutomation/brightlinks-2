@@ -7,7 +7,6 @@ interface LogoProps {
 
 export default function Logo({ variant = 'dark', size = 'md' }: LogoProps) {
   const textColor = variant === 'light' ? '#FFFFFF' : '#1B2B6B';
-  const ukColor = variant === 'light' ? '#FF6B2B' : '#FF6B2B';
 
   const sizes = {
     sm: { icon: 32, text: 14, gap: 8 },
@@ -53,18 +52,7 @@ export default function Logo({ variant = 'dark', size = 'md' }: LogoProps) {
             letterSpacing: '-0.02em',
           }}
         >
-          BrightLinks
-        </span>
-        <span
-          style={{
-            fontSize: s.text * 0.65,
-            fontWeight: 700,
-            color: ukColor,
-            letterSpacing: '0.08em',
-            textTransform: 'uppercase',
-          }}
-        >
-          United Kingdom
+          Bright Links
         </span>
       </span>
     </Link>

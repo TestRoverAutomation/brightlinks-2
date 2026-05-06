@@ -59,7 +59,7 @@ export default function InquiryModal() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
-      if (res.ok) setSubmitted(true);
+      if (res.status === 201) setSubmitted(true);
       else setSubmitted(true); // still show success to user
     } catch {
       setSubmitted(true);

@@ -183,17 +183,54 @@ git merge develop
 git push origin main
 ```
 
-### Netlify Forms
+---
 
-Forms use `@netlify/plugin-nextjs@5` which requires static form definitions. The forms are declared in `public/netlify-forms.html` (required — do not delete). React components submit via `fetch` POST with a hidden `form-name` field. Two forms are registered: `contact` and `inquiry`.
+## Contact & Inquiry Form Emails (Resend)
+
+Both the **Contact page form** and the **Get a Free Quote modal** send emails directly to `info@brightlinksuk.com` via [Resend](https://resend.com).
+
+### Client setup (one-time)
+
+1. Go to [resend.com](https://resend.com) and create a free account
+2. **Verify your domain** — Resend → **Domains** → **Add Domain** → enter `brightlinksuk.com`
+   - They will provide DNS records (TXT + MX) to add to your domain registrar
+   - Once verified, emails send from `noreply@brightlinksuk.com`
+3. **Create an API key** — Resend → **API Keys** → **Create API Key** → copy the key
+4. **Add to Netlify** — Netlify dashboard → your site → **Site configuration** → **Environment variables** → **Add variable**:
+
+| Key | Value |
+|---|---|
+| `RESEND_API_KEY` | Paste the API key from step 3 |
+
+> Do **not** add `RESEND_TO_EMAIL` to Netlify — that variable is only used locally for testing and is intentionally absent from production.
+
+### Free plan limits
+- 3,000 emails/month — sufficient for a contact form
+- No credit card required
+
+### Local testing
+Create a `.env.local` file in the project root (never commit this file):
+```
+RESEND_API_KEY=your_api_key_here
+RESEND_TO_EMAIL=your_test_email@gmail.com
+```
+With `RESEND_TO_EMAIL` set, emails go to your test address and use Resend's sandbox sender so no domain verification is needed locally.
 
 ---
 
 ## Environment Variables
 
-Set in Netlify dashboard or `.env.local` for local dev.
+### Netlify (production & staging)
+
+| Variable | Where to set | Description |
+|---|---|---|
+| `RESEND_API_KEY` | Netlify dashboard → Environment variables | Resend API key for sending form emails |
+| `NEXT_PUBLIC_SITE_URL` | Already set in `netlify.toml` | Full site URL |
+| `NEXT_PUBLIC_ENV` | Already set in `netlify.toml` | Controls staging banner + robots |
+
+### Local development only (`.env.local` — never commit)
 
 | Variable | Description |
 |---|---|
-| `NEXT_PUBLIC_SITE_URL` | Full site URL (e.g. `https://www.brightlinksuk.com`) |
-| `NEXT_PUBLIC_ENV` | `production`, `staging`, or `preview` — controls staging banner + robots |
+| `RESEND_API_KEY` | Your Resend API key |
+| `RESEND_TO_EMAIL` | Test recipient — overrides `info@brightlinksuk.com` locally |

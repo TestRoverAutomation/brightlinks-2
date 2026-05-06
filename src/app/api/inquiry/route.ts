@@ -1,7 +1,6 @@
 import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
-
-const RECIPIENT = 'info@brightlinksuk.com';
+import { SITE } from '@/lib/constants';
 
 export async function POST(req: NextRequest) {
   const resend = new Resend(process.env.RESEND_API_KEY);
@@ -37,15 +36,20 @@ export async function POST(req: NextRequest) {
       </div>
     `;
 
+    const recipient = process.env.RESEND_TO_EMAIL || SITE.email;
+    const fromAddress = process.env.RESEND_TO_EMAIL
+      ? 'BrightLinks UK <onboarding@resend.dev>'
+      : `${SITE.name} <noreply@brightlinksuk.com>`;
+
     await resend.emails.send({
-      from: 'BrightLinks UK <noreply@brightlinksuk.com>',
-      to: RECIPIENT,
+      from: fromAddress,
+      to: recipient,
       replyTo: email,
       subject,
       html,
     });
 
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true }, { status: 201 });
   } catch (err) {
     console.error('Email send error:', err);
     return NextResponse.json({ ok: false }, { status: 500 });
