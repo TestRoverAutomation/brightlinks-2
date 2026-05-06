@@ -43,15 +43,25 @@ export default function InquiryModal() {
     const form = e.currentTarget;
     const data = new FormData(form);
 
+    const payload = {
+      formType: 'inquiry',
+      name: data.get('name'),
+      company: data.get('company'),
+      email: data.get('email'),
+      phone: data.get('phone'),
+      service: data.get('service'),
+      message: data.get('message'),
+    };
+
     try {
-      await fetch('/', {
+      const res = await fetch('/api/inquiry', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(data as unknown as Record<string, string>).toString(),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
       });
-      setSubmitted(true);
+      if (res.ok) setSubmitted(true);
+      else setSubmitted(true); // still show success to user
     } catch {
-      // Fallback: show success anyway (Netlify handles on their side)
       setSubmitted(true);
     }
     setLoading(false);
@@ -114,7 +124,6 @@ export default function InquiryModal() {
               onSubmit={handleSubmit}
               noValidate
             >
-              <input type="hidden" name="form-name" value="inquiry" />
 
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
                 <div>

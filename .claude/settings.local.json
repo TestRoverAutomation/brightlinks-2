@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem -Path \"c:\\\\Users\\\\pothi\\\\Development\\\\brightlinks\" -Recurse -Force | Select-Object FullName | Sort-Object FullName | ForEach-Object { $_.FullName.Replace\\(\"c:\\\\Users\\\\pothi\\\\Development\\\\brightlinks\\\\\", \"\"\\) })",
+      "Bash(node -e \"const p = require\\('./package.json'\\); console.log\\('next:', p.dependencies.next\\); console.log\\('resend:', p.dependencies.resend || 'not installed'\\)\")"
+    ]
+  }
+}

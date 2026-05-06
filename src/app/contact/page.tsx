@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { SITE } from '@/lib/constants';
+import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
@@ -28,75 +29,7 @@ export default function ContactPage() {
               <h2 style={{ fontWeight: 800, fontSize: '1.5rem', color: 'var(--color-navy)', marginBottom: '0.5rem' }}>Send us a message</h2>
               <p style={{ color: 'var(--color-gray-600)', marginBottom: '2rem', fontSize: '0.9375rem' }}>We respond within 2 business hours.</p>
 
-              <form
-                name="contact"
-                method="POST"
-                action="/contact?success=true"
-                noValidate
-              >
-                <input type="hidden" name="form-name" value="contact" />
-
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
-                  <div>
-                    <label className="form-label" htmlFor="name">Full Name *</label>
-                    <input className="form-input" type="text" id="name" name="name" required autoComplete="name" placeholder="Jane Smith" />
-                  </div>
-                  <div>
-                    <label className="form-label" htmlFor="company">Company</label>
-                    <input className="form-input" type="text" id="company" name="company" autoComplete="organization" placeholder="Acme Ltd" />
-                  </div>
-                </div>
-
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
-                  <div>
-                    <label className="form-label" htmlFor="email">Email *</label>
-                    <input className="form-input" type="email" id="email" name="email" required autoComplete="email" placeholder="jane@company.com" />
-                  </div>
-                  <div>
-                    <label className="form-label" htmlFor="phone">Phone</label>
-                    <input className="form-input" type="tel" id="phone" name="phone" autoComplete="tel" placeholder="07700 900000" />
-                  </div>
-                </div>
-
-                <div style={{ marginBottom: '1rem' }}>
-                  <label className="form-label" htmlFor="service">Service Interest</label>
-                  <select className="form-input" id="service" name="service" style={{ appearance: 'none' }}>
-                    <option value="">Select a service...</option>
-                    <option>Managed IT Services</option>
-                    <option>Cybersecurity</option>
-                    <option>Cloud Solutions</option>
-                    <option>Software Solutions</option>
-                    <option>Hardware & Configuration</option>
-                    <option>General Enquiry</option>
-                  </select>
-                </div>
-
-                <div style={{ marginBottom: '1rem' }}>
-                  <label className="form-label" htmlFor="message">Message *</label>
-                  <textarea
-                    className="form-input"
-                    id="message"
-                    name="message"
-                    required
-                    rows={5}
-                    placeholder="Tell us about your requirements..."
-                    style={{ resize: 'vertical' }}
-                  />
-                </div>
-
-                <div style={{ marginBottom: '1.5rem' }}>
-                  <label style={{ display: 'flex', gap: '0.75rem', cursor: 'pointer', alignItems: 'flex-start' }}>
-                    <input type="checkbox" required style={{ marginTop: '0.2rem', accentColor: 'var(--color-turquoise)', width: 16, height: 16, flexShrink: 0 }} />
-                    <span style={{ fontSize: '0.8125rem', color: 'var(--color-gray-600)', lineHeight: 1.5 }}>
-                      I agree to BrightLinks UK processing my data per the <a href="/privacy-policy" style={{ color: 'var(--color-turquoise)', fontWeight: 600 }}>Privacy Policy</a>. *
-                    </span>
-                  </label>
-                </div>
-
-                <button type="submit" className="btn btn-orange" style={{ width: '100%', justifyContent: 'center' }}>
-                  Send Message
-                </button>
-              </form>
+              <ContactForm />
             </div>
 
             {/* Contact info */}
