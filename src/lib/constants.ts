@@ -48,6 +48,14 @@ export const NAV_SOLUTIONS = [
   { title: 'Education', href: '/solutions#education' },
 ];
 
+export const NAV_INDUSTRIES = [
+  { title: 'Public Sector', description: 'G-Cloud accredited IT for government & councils', href: '/industries/public-sector' },
+  { title: 'Healthcare', description: 'Secure, HSCN-ready IT for NHS & private health', href: '/industries/healthcare' },
+  { title: 'Education', description: 'Technology for schools, colleges & academy trusts', href: '/industries/education' },
+  { title: 'Enterprise', description: 'Scalable infrastructure for large organisations', href: '/industries/enterprise' },
+  { title: 'Small & Medium Business', description: 'Affordable managed IT that grows with you', href: '/industries/sme' },
+];
+
 export const SERVICES = [
   {
     title: 'Managed IT Services',

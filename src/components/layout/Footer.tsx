@@ -12,11 +12,11 @@ export default function Footer() {
     <footer style={{ background: 'var(--color-navy)', color: 'white' }} role="contentinfo">
       {/* Main footer */}
       <div className="container" style={{ paddingBlock: '4rem' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '3rem' }}>
+        <div className="footer-grid">
           {/* Brand column */}
-          <div style={{ gridColumn: 'span 1' }}>
+          <div>
             <Logo variant="light" size="md" />
-            <p style={{ marginTop: '1.25rem', fontSize: '0.9rem', color: 'rgba(255,255,255,0.7)', lineHeight: 1.7, maxWidth: '280px' }}>
+            <p style={{ marginTop: '1.25rem', fontSize: '0.9rem', color: 'rgba(255,255,255,0.7)', lineHeight: 1.7 }}>
               Empowering UK businesses with exceptional IT solutions — from managed services to cybersecurity and beyond.
             </p>
             <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1.5rem' }}>
@@ -107,6 +107,20 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      <style>{`
+        .footer-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2.5rem;
+        }
+        @media (max-width: 900px) {
+          .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 520px) {
+          .footer-grid { grid-template-columns: 1fr; }
+        }
+      `}</style>
 
       {/* Bottom bar */}
       <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
