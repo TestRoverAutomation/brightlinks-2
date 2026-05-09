@@ -4,8 +4,8 @@ import { ArrowRight, Phone } from 'lucide-react';
 import { SITE, NAV_INDUSTRIES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Industries We Serve | BrightLinks UK',
-  description: 'IT solutions tailored to your sector. BrightLinks UK serves public sector, healthcare, education, enterprise and SME organisations across the UK.',
+  title: 'Industries We Serve | Bright Links',
+  description: 'IT solutions tailored to your sector. Bright Links serves public sector, healthcare, education, enterprise and SME organisations across the UK.',
 };
 
 const industryImages: Record<string, string> = {

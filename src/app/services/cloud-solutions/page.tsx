@@ -3,7 +3,7 @@ import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
   title: 'Cloud Solutions',
-  description: 'BrightLinks UK cloud solutions — Microsoft Azure, Microsoft 365, cloud migration, hybrid cloud, and cloud cost optimisation for UK businesses.',
+  description: 'Bright Links cloud solutions — Microsoft Azure, Microsoft 365, cloud migration, hybrid cloud, and cloud cost optimisation for UK businesses.',
 };
 
 export default function CloudSolutionsPage() {

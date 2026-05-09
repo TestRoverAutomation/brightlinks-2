@@ -4,7 +4,7 @@ import { CheckCircle, Phone, ArrowRight } from 'lucide-react';
 import { SITE } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'IT Solutions for Small & Medium Business | BrightLinks UK',
+  title: 'IT Solutions for Small & Medium Business | Bright Links',
   description: 'Affordable, scalable managed IT for growing UK businesses. One point of contact, 24/7 support, and IT that grows with you.',
 };
 
@@ -83,7 +83,7 @@ export default function SmePage() {
       <section className="section" style={{ background: 'var(--color-gray-50)' }}>
         <div className="container">
           <h2 style={{ fontWeight: 800, fontSize: '1.75rem', color: 'var(--color-navy)', textAlign: 'center', marginBottom: '3rem' }}>
-            Why SMEs choose BrightLinks
+            Why SMEs choose Bright Links
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem' }}>
             {benefits.map(b => (
@@ -114,7 +114,7 @@ export default function SmePage() {
             Speak to our team today — no obligation, no jargon, just honest advice.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button className="btn btn-orange btn-lg" data-open-inquiry="true">Get a Free Quote</button>
+            <button className="btn btn-orange btn-lg" data-open-inquiry="true">Get a Quote</button>
             <a href={`tel:${SITE.phoneTel}`} className="btn btn-outline-white btn-lg">
               <Phone size={17} aria-hidden="true" /> {SITE.phone}
             </a>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="200" height="220">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a6bbf"/>
+      <stop offset="100%" stop-color="#0d3a6e"/>
+    </linearGradient>
+    <clipPath id="badgeShape">
+      <path d="M20,220 L20,100 Q20,10 100,10 Q180,10 180,100 L180,220 Q180,228 172,228 L28,228 Q20,228 20,220 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Badge background shape: arch top, rounded bottom -->
+  <path d="M16,210 L16,96 Q16,6 100,6 Q184,6 184,96 L184,210 Q184,220 174,220 L26,220 Q16,220 16,210 Z"
+        fill="url(#bgGrad)" stroke="#1a5a9e" stroke-width="1"/>
+
+  <!-- CYBER ESSENTIALS text at top -->
+  <text x="100" y="52" text-anchor="middle" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" letter-spacing="1">CYBER</text>
+  <text x="100" y="76" text-anchor="middle" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="900" letter-spacing="0.5">ESSENTIALS</text>
+
+  <!-- Tick/checkmark: blue sweep + green wedge -->
+  <!-- Green left part of tick -->
+  <path d="M68,145 L88,170 L100,158 L80,130 Z" fill="#5ab045"/>
+  <!-- Blue right sweep of tick -->
+  <path d="M85,168 L100,158 L148,100 Q155,92 150,86 Q144,80 137,88 L90,148 Z" fill="#4a9fd4"/>
+  <!-- Blue curved top of tick -->
+  <path d="M137,88 Q144,80 150,86 Q157,93 148,100 L120,133 Q113,125 120,117 Z" fill="#2e7cbf"/>
+
+  <!-- CERTIFIED text at bottom -->
+  <text x="100" y="202" text-anchor="middle" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="900" letter-spacing="2">CERTIFIED</text>
+</svg>

@@ -5,8 +5,8 @@ import { Shield, Lock, Cloud, Code, Monitor, Users, Award, Package, Headphones, 
 import { SERVICES, STATS, TESTIMONIALS, SITE } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'BrightLinks UK | Exceptional IT Solutions for UK Businesses',
-  description: 'BrightLinks UK — managed IT services, cybersecurity, cloud, software & hardware for UK businesses. London-based. 24/7 support. Call 0208 127 1740.',
+  title: 'Bright Links | Exceptional IT Solutions for UK Businesses',
+  description: 'Bright Links — managed IT services, cybersecurity, cloud, software & hardware for UK businesses. London-based. 24/7 support. Call 0208 127 1740.',
 };
 
 const iconMap: Record<string, React.ComponentType<LucideProps>> = {
@@ -17,10 +17,9 @@ const partnerLogos = [
   { name: 'Microsoft', text: 'Microsoft' },
   { name: 'Dell Technologies', text: 'Dell' },
   { name: 'HP', text: 'HP' },
-  { name: 'Cisco', text: 'Cisco' },
-  { name: 'Apple', text: 'Apple' },
   { name: 'Lenovo', text: 'Lenovo' },
-  { name: 'VMware', text: 'VMware' },
+  {name: 'veeam', text: 'Veeam'},
+  {name: 'adobe', text: 'Adobe'},
 ];
 
 export default function HomePage() {
@@ -55,11 +54,11 @@ export default function HomePage() {
               <span style={{ color: 'var(--color-turquoise)' }}>Exceptional IT</span> Solutions
             </h1>
             <p style={{ fontSize: 'clamp(1rem, 2.5vw, 1.25rem)', color: 'rgba(255,255,255,0.85)', lineHeight: 1.7, marginBottom: '2.5rem', maxWidth: '600px' }}>
-              From managed services and cybersecurity to cloud and hardware — BrightLinks UK delivers technology that drives growth, protects your business, and keeps you ahead.
+              From managed services and cybersecurity to cloud and hardware — Bright Links delivers technology that drives growth, protects your business, and keeps you ahead.
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <button className="btn btn-orange btn-lg" data-open-inquiry="true" aria-label="Get a free IT quote">
-                Get a Free Quote
+                Get a Quote
               </button>
               <a href={`tel:${SITE.phoneTel}`} className="btn btn-outline-white btn-lg" aria-label={`Call us on ${SITE.phone}`}>
                 <Phone size={18} aria-hidden="true" />
@@ -69,7 +68,7 @@ export default function HomePage() {
 
             {/* Trust indicators */}
             <div style={{ display: 'flex', gap: '2rem', marginTop: '3rem', flexWrap: 'wrap' }}>
-              {['Cyber Essentials Certified', '24/7 UK Support', 'ITIL V4 Aligned'].map(text => (
+              {['Cyber Essentials Certified', '24/7 UK Support'].map(text => (
                 <div key={text} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.875rem', color: 'rgba(255,255,255,0.85)' }}>
                   <CheckCircle size={16} style={{ color: 'var(--color-turquoise)', flexShrink: 0 }} aria-hidden="true" />
                   {text}
@@ -139,7 +138,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── WHY BRIGHTLINKS ── */}
+      {/* ── WHY Bright Links ── */}
       <section className="section" style={{ background: 'var(--color-navy)', color: 'white' }} aria-labelledby="why-heading">
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '4rem', alignItems: 'center' }}>
@@ -153,15 +152,15 @@ export default function HomePage() {
               <p style={{ color: 'rgba(255,255,255,0.75)', lineHeight: 1.7, marginBottom: '2rem', fontSize: '1rem' }}>
                 We're not just a supplier — we're a strategic partner. Our UK-based team brings decades of experience, unrivalled vendor accreditations, and a genuine commitment to your outcomes.
               </p>
-              <button className="btn btn-orange" data-open-inquiry="true" aria-label="Get a free quote">
-                Get a Free Quote <ArrowRight size={17} aria-hidden="true" />
+              <button className="btn btn-orange" data-open-inquiry="true" aria-label="Get a quote">
+                Get a Quote <ArrowRight size={17} aria-hidden="true" />
               </button>
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
               {[
                 { title: 'UK-Based 24/7 Support', desc: 'Our helpdesk operates round the clock from UK centres — no overseas call centres, ever.' },
-                { title: 'Accredited & Trusted', desc: 'Microsoft Gold Partner, Cyber Essentials Plus, ISO-aligned. We hold the accreditations that matter.' },
+                { title: 'Accredited & Trusted', desc: 'Dell Gold Partner, Lenovo Gold Partner, Cyber Essentials. We hold the accreditations that matter.' },
                 { title: 'Vendor-Agnostic Advice', desc: 'We work with 200+ vendors so our recommendations are always in your best interest, not ours.' },
                 { title: 'Proven Track Record', desc: 'Over 1,000 UK organisations trust us to keep their technology running and their data safe.' },
               ].map(({ title, desc }) => (
@@ -228,7 +227,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ── */}
+      {/* ── TESTIMONIALS ──
       <section className="section" style={{ background: 'var(--color-gray-50)' }} aria-labelledby="testimonials-heading">
         <div className="container">
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
@@ -255,7 +254,7 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── CTA BANNER ── */}
       <section style={{ background: 'var(--color-navy)', padding: '5rem 0' }} aria-labelledby="cta-heading">
@@ -267,8 +266,8 @@ export default function HomePage() {
             Get a free consultation with our experts. No obligation, no jargon — just honest advice tailored to your business.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button className="btn btn-orange btn-lg" data-open-inquiry="true" aria-label="Get a free quote">
-              Get a Free Quote
+            <button className="btn btn-orange btn-lg" data-open-inquiry="true" aria-label="Get a quote">
+              Get a Quote
             </button>
             <a href={`tel:${SITE.phoneTel}`} className="btn btn-outline-white btn-lg" aria-label={`Call ${SITE.phone}`}>
               <Phone size={18} aria-hidden="true" />

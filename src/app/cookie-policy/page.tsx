@@ -3,7 +3,7 @@ import { SITE } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Cookie Policy',
-  description: 'BrightLinks UK cookie policy — learn what cookies we use and how to manage your preferences.',
+  description: 'Bright Links cookie policy — learn what cookies we use and how to manage your preferences.',
 };
 
 export default function CookiePolicyPage() {
@@ -24,7 +24,7 @@ export default function CookiePolicyPage() {
           },
           {
             title: 'Cookies we use',
-            content: `| Cookie | Type | Purpose | Duration |\n|--------|------|---------|----------|\n| brightlinks_cookie_consent | Essential | Stores your cookie preferences | 1 year |\n| _ga | Analytics | Google Analytics visitor ID | 2 years |\n| _gid | Analytics | Google Analytics session | 24 hours |\n| _fbp | Marketing | Facebook pixel tracking | 3 months |`,
+            content: `| Cookie | Type | Purpose | Duration |\n|--------|------|---------|----------|\n| Bright Links_cookie_consent | Essential | Stores your cookie preferences | 1 year |\n| _ga | Analytics | Google Analytics visitor ID | 2 years |\n| _gid | Analytics | Google Analytics session | 24 hours |\n| _fbp | Marketing | Facebook pixel tracking | 3 months |`,
           },
           {
             title: 'Managing your preferences',

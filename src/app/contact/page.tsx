@@ -5,7 +5,7 @@ import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Contact BrightLinks UK — call 0208 127 1740, email info@brightlinksuk.com, or visit us at 124 City Road, London EC1V 2NX.',
+  description: 'Contact Bright Links � call 0208 127 1740, email info@brightlinksuk.com, or visit us at 124 City Road, London EC1V 2NX.',
 };
 
 export default function ContactPage() {
@@ -41,7 +41,7 @@ export default function ContactPage() {
                   { Icon: Phone, label: 'Telephone', value: SITE.phone, href: `tel:${SITE.phoneTel}` },
                   { Icon: Mail, label: 'Email', value: SITE.email, href: `mailto:${SITE.email}` },
                   { Icon: MapPin, label: 'Address', value: SITE.address, href: '#map' },
-                  { Icon: Clock, label: 'Office hours', value: 'Mon–Fri: 08:00–18:00\n24/7 support for managed clients', href: undefined },
+                  { Icon: Clock, label: 'Office hours', value: 'Mon–Fri: 9:00–17:30', href: undefined },
                 ].map(({ Icon, label, value, href }) => (
                   <div key={label} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                     <div style={{ width: 44, height: 44, borderRadius: '0.625rem', background: 'var(--color-turquoise-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
@@ -62,7 +62,7 @@ export default function ContactPage() {
               {/* Map embed */}
               <div id="map" style={{ borderRadius: '1rem', overflow: 'hidden', height: '280px', background: 'var(--color-gray-100)' }}>
                 <iframe
-                  title="BrightLinks UK location map"
+                  title="Bright Links location map"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.5!2d-0.0888!3d51.5267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b6f1a2c3d4f%3A0x0!2s124+City+Road%2C+London+EC1V+2NX!5e0!3m2!1sen!2suk!4v1"
                   width="100%"
                   height="280"

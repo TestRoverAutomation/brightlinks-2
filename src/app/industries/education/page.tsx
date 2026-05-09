@@ -4,8 +4,8 @@ import { CheckCircle, Phone, ArrowRight } from 'lucide-react';
 import { SITE } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'IT Solutions for Education | BrightLinks UK',
-  description: 'Technology for schools, colleges, universities and multi-academy trusts. DfE compliant, safeguarding-ready IT from BrightLinks UK.',
+  title: 'IT Solutions for Education | Bright Links',
+  description: 'Technology for schools, colleges, universities and multi-academy trusts. DfE compliant, safeguarding-ready IT from Bright Links.',
 };
 
 const features = [
@@ -83,7 +83,7 @@ export default function EducationPage() {
       <section className="section" style={{ background: 'var(--color-gray-50)' }}>
         <div className="container">
           <h2 style={{ fontWeight: 800, fontSize: '1.75rem', color: 'var(--color-navy)', textAlign: 'center', marginBottom: '3rem' }}>
-            Why education providers choose BrightLinks
+            Why education providers choose Bright Links
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem' }}>
             {benefits.map(b => (
@@ -114,7 +114,7 @@ export default function EducationPage() {
             Speak to our education IT specialists today — no obligation, no jargon.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button className="btn btn-orange btn-lg" data-open-inquiry="true">Get a Free Quote</button>
+            <button className="btn btn-orange btn-lg" data-open-inquiry="true">Get a Quote</button>
             <a href={`tel:${SITE.phoneTel}`} className="btn btn-outline-white btn-lg">
               <Phone size={17} aria-hidden="true" /> {SITE.phone}
             </a>

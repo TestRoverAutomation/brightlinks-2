@@ -3,7 +3,7 @@ import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
   title: 'Software Solutions',
-  description: 'BrightLinks UK software solutions — Microsoft 365, software asset management, ITSM tooling, CRM, and license optimisation for UK businesses.',
+  description: 'Bright Links software solutions — Microsoft 365, software asset management, ITSM tooling, CRM, and license optimisation for UK businesses.',
 };
 
 export default function SoftwarePage() {

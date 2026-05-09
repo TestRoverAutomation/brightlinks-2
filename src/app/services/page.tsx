@@ -5,7 +5,7 @@ import { SERVICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'IT Services',
-  description: 'Explore BrightLinks UK\'s full range of IT services — managed IT, cybersecurity, cloud, software, and hardware solutions for UK businesses.',
+  description: 'Explore Bright Links\'s full range of IT services — managed IT, cybersecurity, cloud, software, and hardware solutions for UK businesses.',
 };
 
 const iconMap: Record<string, React.ComponentType<LucideProps>> = { Shield, Lock, Cloud, Code, Monitor };
@@ -23,7 +23,7 @@ export default function ServicesPage() {
             End-to-end IT solutions for UK businesses
           </h1>
           <p style={{ fontSize: '1.125rem', color: 'rgba(255,255,255,0.8)', lineHeight: 1.7, maxWidth: '600px' }}>
-            Whether you need 24/7 managed support, robust cybersecurity, or cutting-edge cloud infrastructure — BrightLinks UK has you covered.
+            Whether you need 24/7 managed support, robust cybersecurity, or cutting-edge cloud infrastructure — Bright Links has you covered.
           </p>
         </div>
       </section>

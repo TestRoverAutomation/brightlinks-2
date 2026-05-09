@@ -3,7 +3,7 @@ import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
   title: 'Hardware & Configuration',
-  description: 'BrightLinks UK hardware supply, configuration, and deployment — 30,000+ products, next-day UK delivery, device imaging, asset tagging, and WEEE disposal.',
+  description: 'Bright Links hardware supply, configuration, and deployment — 30,000+ products, next-day UK delivery, device imaging, asset tagging, and WEEE disposal.',
 };
 
 export default function HardwarePage() {

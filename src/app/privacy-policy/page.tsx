@@ -3,7 +3,7 @@ import { SITE } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'BrightLinks UK privacy policy — how we collect, use, and protect your personal data in accordance with UK GDPR.',
+  description: 'Bright Links privacy policy — how we collect, use, and protect your personal data in accordance with UK GDPR.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -11,12 +11,12 @@ export default function PrivacyPolicyPage() {
     <section className="section">
       <div className="container" style={{ maxWidth: '800px' }}>
         <h1 style={{ fontWeight: 900, fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', color: 'var(--color-navy)', marginBottom: '0.5rem' }}>Privacy Policy</h1>
-        <p style={{ color: 'var(--color-gray-600)', marginBottom: '3rem' }}>Last updated: May 2025. BrightLinks UK is committed to protecting your personal data in accordance with UK GDPR and the Data Protection Act 2018.</p>
+        <p style={{ color: 'var(--color-gray-600)', marginBottom: '3rem' }}>Last updated: May 2025. Bright Links is committed to protecting your personal data in accordance with UK GDPR and the Data Protection Act 2018.</p>
 
         {[
           {
             title: '1. Who we are',
-            content: `BrightLinks UK Ltd is the data controller for personal data collected through this website.\n\nContact: ${SITE.email} | ${SITE.phone}\nAddress: ${SITE.address}`,
+            content: `Bright Links Ltd is the data controller for personal data collected through this website.\n\nContact: ${SITE.email} | ${SITE.phone}\nAddress: ${SITE.address}`,
           },
           {
             title: '2. Data we collect',

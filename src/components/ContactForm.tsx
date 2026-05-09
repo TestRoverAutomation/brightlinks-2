@@ -107,7 +107,7 @@ export default function ContactForm() {
         <label style={{ display: 'flex', gap: '0.75rem', cursor: 'pointer', alignItems: 'flex-start' }}>
           <input type="checkbox" required style={{ marginTop: '0.2rem', accentColor: 'var(--color-turquoise)', width: 16, height: 16, flexShrink: 0 }} />
           <span style={{ fontSize: '0.8125rem', color: 'var(--color-gray-600)', lineHeight: 1.5 }}>
-            I agree to BrightLinks UK processing my data per the{' '}
+            I agree to Bright Links processing my data per the{' '}
             <a href="/privacy-policy" style={{ color: 'var(--color-turquoise)', fontWeight: 600 }}>Privacy Policy</a>. *
           </span>
         </label>

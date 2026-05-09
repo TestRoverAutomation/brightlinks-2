@@ -15,29 +15,29 @@ const isStaging = SITE.env !== 'production';
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: 'BrightLinks UK | Exceptional IT Solutions for UK Businesses',
-    template: '%s | BrightLinks UK',
+    default: 'Bright Links | Exceptional IT Solutions for UK Businesses',
+    template: '%s | Bright Links',
   },
-  description: 'BrightLinks UK delivers managed IT services, cybersecurity, cloud solutions, and hardware to businesses across the UK. Based in London. Call 0208 127 1740.',
-  keywords: ['IT solutions UK', 'managed IT services London', 'cybersecurity UK', 'cloud solutions', 'IT support London', 'BrightLinks UK'],
+  description: 'Bright Links delivers managed IT services, cybersecurity, cloud solutions, and hardware to businesses across the UK. Based in London. Call 0208 127 1740.',
+  keywords: ['IT solutions UK', 'managed IT services London', 'cybersecurity UK', 'cloud solutions', 'IT support London', 'Bright Links'],
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
   },
-  authors: [{ name: 'BrightLinks UK' }],
-  creator: 'BrightLinks UK',
+  authors: [{ name: 'Bright Links' }],
+  creator: 'Bright Links',
   openGraph: {
     type: 'website',
     locale: 'en_GB',
     url: SITE.url,
     siteName: SITE.name,
-    title: 'BrightLinks UK | Exceptional IT Solutions',
+    title: 'Bright Links | Exceptional IT Solutions',
     description: 'Empowering UK businesses with managed IT, cybersecurity, cloud, and more. 24/7 UK support.',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'BrightLinks UK' }],
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Bright Links' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BrightLinks UK | IT Solutions',
+    title: 'Bright Links | IT Solutions',
     description: 'Managed IT, cybersecurity, cloud & hardware for UK businesses.',
   },
   robots: isStaging
@@ -75,8 +75,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               openingHoursSpecification: {
                 '@type': 'OpeningHoursSpecification',
                 dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-                opens: '08:00',
-                closes: '18:00',
+                opens: '09:00',
+                closes: '17:30',
               },
             }),
           }}

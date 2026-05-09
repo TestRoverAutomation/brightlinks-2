@@ -3,7 +3,7 @@ import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
   title: 'Cybersecurity Services',
-  description: 'Protect your UK business from cyber threats. BrightLinks UK provides Cyber Essentials, endpoint security, threat detection, and incident response.',
+  description: 'Protect your UK business from cyber threats. Bright Links provides Cyber Essentials, endpoint security, threat detection, and incident response.',
 };
 
 export default function CybersecurityPage() {
@@ -14,7 +14,7 @@ export default function CybersecurityPage() {
       description="In an increasingly hostile threat landscape, robust cybersecurity is non-negotiable. We deliver comprehensive protection strategies tailored to your risk profile."
       image="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1000&q=80"
       features={[
-        'Cyber Essentials & Cyber Essentials Plus certification support',
+        'Cyber Essentials certification support',
         'Endpoint detection & response (EDR)',
         'Email security & anti-phishing',
         'Vulnerability assessments & penetration testing',

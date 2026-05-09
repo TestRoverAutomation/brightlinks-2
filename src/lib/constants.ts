@@ -1,5 +1,5 @@
 export const SITE = {
-  name: 'BrightLinks UK',
+  name: 'Bright Links',
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.brightlinksuk.com',
   email: 'info@brightlinksuk.com',
   phone: '0208 127 1740',
@@ -49,7 +49,7 @@ export const NAV_SOLUTIONS = [
 ];
 
 export const NAV_INDUSTRIES = [
-  { title: 'Public Sector', description: 'G-Cloud accredited IT for government & councils', href: '/industries/public-sector' },
+  { title: 'Public Sector', description: 'Dedicated IT services for government and councils', href: '/industries/public-sector' },
   { title: 'Healthcare', description: 'Secure, HSCN-ready IT for NHS & private health', href: '/industries/healthcare' },
   { title: 'Education', description: 'Technology for schools, colleges & academy trusts', href: '/industries/education' },
   { title: 'Enterprise', description: 'Scalable infrastructure for large organisations', href: '/industries/enterprise' },
@@ -60,7 +60,7 @@ export const SERVICES = [
   {
     title: 'Managed IT Services',
     slug: 'managed-services',
-    description: 'Fully managed IT support with 24/7 UK-based helpdesk, proactive monitoring, and ITIL-aligned service delivery.',
+    description: 'Fully managed IT support with 24/7 UK-based helpdesk, proactive monitoring, and reliable service delivery.',
     icon: 'Shield',
     color: 'turquoise',
     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
@@ -69,7 +69,7 @@ export const SERVICES = [
       'Proactive system monitoring',
       'Patch management & updates',
       'Asset lifecycle management',
-      'ITIL V4 aligned processes',
+
       'Dedicated account manager',
     ],
   },
@@ -148,7 +148,7 @@ export const STATS = [
 
 export const TESTIMONIALS = [
   {
-    quote: "BrightLinks transformed our IT infrastructure. The 24/7 support means our team never loses productivity — even out of hours issues are resolved fast.",
+    quote: "Bright Links transformed our IT infrastructure. The 24/7 support means our team never loses productivity — even out of hours issues are resolved fast.",
     name: 'Sarah Mitchell',
     title: 'IT Director',
     company: 'Mitchell & Co Solicitors',
@@ -160,7 +160,7 @@ export const TESTIMONIALS = [
     company: 'Apex Logistics Ltd',
   },
   {
-    quote: "Moving 200 users to Microsoft 365 with zero downtime was impressive. BrightLinks project-managed everything brilliantly.",
+    quote: "Moving 200 users to Microsoft 365 with zero downtime was impressive. Bright Links project-managed everything brilliantly.",
     name: 'Dr. Helen Carter',
     title: 'Head of Technology',
     company: 'Greenfield Academy Trust',

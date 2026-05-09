@@ -317,7 +317,7 @@ export default function Header() {
               <Phone size={17} aria-hidden="true" /> {SITE.phone}
             </a>
             <button className="btn btn-orange" data-open-inquiry="true" onClick={closeDrawer} style={{ justifyContent: 'center' }}>
-              Get a Free Quote
+              Get a Quote
             </button>
           </div>
         </nav>

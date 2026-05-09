@@ -4,13 +4,13 @@ import { CheckCircle, Phone, ArrowRight } from 'lucide-react';
 import { SITE } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'IT Solutions for Enterprise | BrightLinks UK',
-  description: 'Scalable, multi-site IT infrastructure and managed services for large UK organisations. ITIL V4 aligned, security-led enterprise IT.',
+  title: 'IT Solutions for Enterprise | Bright Links',
+  description: 'Scalable, multi-site IT infrastructure and managed services for large UK organisations. Security-led enterprise IT.',
 };
 
 const features = [
   'Multi-site infrastructure design and management',
-  'Enterprise service desk (ITIL V4 aligned)',
+  'Enterprise service desk',
   'Security operations and SIEM integration',
   'Dedicated delivery and account management',
   'Microsoft Azure and hybrid cloud architecture',
@@ -21,7 +21,7 @@ const features = [
 
 const benefits = [
   { title: 'Scale Without Complexity', desc: 'We manage complex, multi-site IT environments so your internal teams can focus on strategic initiatives.' },
-  { title: 'ITIL V4 Aligned', desc: 'Service delivery built on ITIL V4 best practices — structured processes, clear SLAs, and continuous improvement.' },
+  { title: 'Structured Delivery', desc: 'Service delivery built on best practices — structured processes, clear SLAs, and continuous improvement.' },
   { title: 'Enterprise Security', desc: 'SIEM, SOC support, endpoint detection and response, and vulnerability management at enterprise scale.' },
   { title: 'Dedicated Team', desc: 'A named account manager and senior engineering resource who know your environment inside out.' },
 ];
@@ -83,7 +83,7 @@ export default function EnterprisePage() {
       <section className="section" style={{ background: 'var(--color-gray-50)' }}>
         <div className="container">
           <h2 style={{ fontWeight: 800, fontSize: '1.75rem', color: 'var(--color-navy)', textAlign: 'center', marginBottom: '3rem' }}>
-            Why enterprise organisations choose BrightLinks
+            Why enterprise organisations choose Bright Links
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem' }}>
             {benefits.map(b => (
@@ -114,7 +114,7 @@ export default function EnterprisePage() {
             Speak to our enterprise specialists today — no obligation, no jargon.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button className="btn btn-orange btn-lg" data-open-inquiry="true">Get a Free Quote</button>
+            <button className="btn btn-orange btn-lg" data-open-inquiry="true">Get a Quote</button>
             <a href={`tel:${SITE.phoneTel}`} className="btn btn-outline-white btn-lg">
               <Phone size={17} aria-hidden="true" /> {SITE.phone}
             </a>

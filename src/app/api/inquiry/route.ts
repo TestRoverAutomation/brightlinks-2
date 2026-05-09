@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
     const html = `
       <div style="font-family:sans-serif;max-width:600px;margin:0 auto;color:#1B2B6B">
         <div style="background:#1B2B6B;padding:24px 32px;border-radius:8px 8px 0 0">
-          <h1 style="margin:0;color:#fff;font-size:20px">BrightLinks UK — ${label}</h1>
+          <h1 style="margin:0;color:#fff;font-size:20px">Bright Links — ${label}</h1>
         </div>
         <div style="background:#f8fafc;padding:32px;border:1px solid #e2e8f0;border-top:none;border-radius:0 0 8px 8px">
           <table style="width:100%;border-collapse:collapse">
@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
 
     const recipient = process.env.RESEND_TO_EMAIL || SITE.email;
     const fromAddress = process.env.RESEND_TO_EMAIL
-      ? 'BrightLinks UK <onboarding@resend.dev>'
+      ? 'Bright Links <onboarding@resend.dev>'
       : `${SITE.name} <noreply@brightlinksuk.com>`;
 
     await resend.emails.send({

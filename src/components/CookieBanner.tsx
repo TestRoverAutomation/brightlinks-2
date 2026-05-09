@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Cookie, X, Lock, Settings, BarChart2, Megaphone } from 'lucide-react';
 
-const COOKIE_KEY = 'brightlinks_cookie_consent';
+const COOKIE_KEY = 'Bright Links_cookie_consent';
 
 const COOKIE_CATEGORIES = [
   {
@@ -13,7 +13,7 @@ const COOKIE_CATEGORIES = [
     desc: 'Essential for the website to function. Cannot be disabled. Includes session management and cookie consent preferences.',
     always: true,
     icon: Lock,
-    examples: 'brightlinks_cookie_consent, session_id',
+    examples: 'Bright Links_cookie_consent, session_id',
   },
   {
     key: 'functional' as const,

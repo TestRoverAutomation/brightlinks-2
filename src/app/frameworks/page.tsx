@@ -3,8 +3,8 @@ import { Phone } from 'lucide-react';
 import { SITE } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Public Sector Procurement Frameworks | BrightLinks UK',
-  description: 'Buy IT services from BrightLinks UK through approved public sector procurement frameworks including Crown Commercial Service, NHS and YPO.',
+  title: 'Public Sector Procurement Frameworks | Bright Links',
+  description: 'Buy IT services from Bright Links through approved public sector procurement frameworks including Crown Commercial Service, NHS and YPO.',
 };
 
 const frameworks = [
@@ -58,7 +58,7 @@ export default function FrameworksPage() {
             Public Sector Procurement Frameworks
           </h1>
           <p style={{ fontSize: '1.125rem', color: 'rgba(255,255,255,0.8)', lineHeight: 1.7, maxWidth: '620px' }}>
-            BrightLinks UK is an approved supplier on multiple Crown Commercial Service, NHS, and local authority frameworks — making it easy for public sector organisations to procure our services compliantly and quickly.
+            Bright Links is an approved supplier on multiple Crown Commercial Service, NHS, and local authority frameworks — making it easy for public sector organisations to procure our services compliantly and quickly.
           </p>
         </div>
       </section>
@@ -138,7 +138,7 @@ export default function FrameworksPage() {
             Buy compliantly through an approved framework — no lengthy tender process required.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button className="btn btn-orange btn-lg" data-open-inquiry="true">Get a Free Quote</button>
+            <button className="btn btn-orange btn-lg" data-open-inquiry="true">Get a Quote</button>
             <a href={`tel:${SITE.phoneTel}`} className="btn btn-outline-white btn-lg">
               <Phone size={17} aria-hidden="true" /> {SITE.phone}
             </a>

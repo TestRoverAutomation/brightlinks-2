@@ -122,11 +122,39 @@ export default function Footer() {
         }
       `}</style>
 
+      {/* Accreditations bar */}
+      <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', paddingBlock: '1.5rem' }}>
+        <div className="container">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1.75rem', flexWrap: 'wrap' }}>
+            <span style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'rgba(255,255,255,0.4)', flexShrink: 0 }}>
+              Accreditations
+            </span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/badges/cyber-essentials-certified.svg" alt="Cyber Essentials Certified" style={{ height: 52, width: 'auto', objectFit: 'contain', opacity: 0.95 }} />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/badges/nhs.png" alt="NHS Supplier" style={{ height: 52, width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1)', opacity: 0.95 }} />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/badges/GCA-1.png" alt="Government Commercial Agency Supplier" style={{ height: 52, width: 'auto', objectFit: 'contain', filter: 'brightness(0) invert(1)', opacity: 0.9 }} />
+            {/* Lenovo 360 Gold 2026 */}
+            <div style={{ display: 'flex', alignItems: 'stretch', borderRadius: '0.5rem', overflow: 'hidden', height: 52, opacity: 0.95 }}>
+              <div style={{ background: 'linear-gradient(135deg, #f8c4b8 0%, #fde8e4 60%, #fff5f3 100%)', padding: '0.35rem 0.6rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                <div style={{ fontSize: '0.6rem', fontWeight: 900, color: '#4B1A5E', letterSpacing: '0.02em', lineHeight: 1.2 }}>Lenovo 360</div>
+                <div style={{ fontSize: '0.6rem', fontWeight: 800, color: '#4B1A5E', letterSpacing: '0.02em', lineHeight: 1.2 }}>Gold</div>
+                <div style={{ fontSize: '0.6rem', fontWeight: 800, color: '#4B1A5E', letterSpacing: '0.02em', lineHeight: 1.2 }}>2026</div>
+              </div>
+              <div style={{ background: '#CC0000', width: 22, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <span style={{ color: 'white', fontSize: '0.55rem', fontWeight: 900, letterSpacing: '0.05em', writingMode: 'vertical-rl', transform: 'rotate(180deg)', fontFamily: 'Arial, sans-serif' }}>Lenovo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom bar */}
       <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
         <div className="container" style={{ paddingBlock: '1.25rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem' }}>
           <p style={{ fontSize: '0.8125rem', color: 'rgba(255,255,255,0.55)', margin: 0 }}>
-            © {currentYear} BrightLinks UK Ltd. All rights reserved. Registered in England & Wales.
+            © {currentYear} Bright Links Ltd. All rights reserved. Registered in England & Wales.
           </p>
           <div style={{ display: 'flex', gap: '1.5rem' }}>
             {[['Cookie Policy', '/cookie-policy'], ['Privacy Policy', '/privacy-policy']].map(([label, href]) => (

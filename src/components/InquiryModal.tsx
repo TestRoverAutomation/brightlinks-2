@@ -91,7 +91,7 @@ export default function InquiryModal() {
         {/* Header */}
         <div style={{ padding: '1.75rem 1.75rem 1.25rem', borderBottom: '1px solid var(--color-gray-200)', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'var(--color-navy)', borderRadius: '1.25rem 1.25rem 0 0' }}>
           <div>
-            <h2 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 800, color: 'white' }}>Get a Free Quote</h2>
+            <h2 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 800, color: 'white' }}>Get a Quote</h2>
             <p style={{ margin: '0.25rem 0 0', fontSize: '0.875rem', color: 'rgba(255,255,255,0.75)' }}>We'll respond within 2 business hours</p>
           </div>
           <button
@@ -178,7 +178,7 @@ export default function InquiryModal() {
                   <input type="checkbox" required
                     style={{ marginTop: '0.2rem', accentColor: 'var(--color-turquoise)', width: 16, height: 16, flexShrink: 0 }} />
                   <span style={{ fontSize: '0.8125rem', color: 'var(--color-gray-600)', lineHeight: 1.5 }}>
-                    I agree to BrightLinks UK processing my data in accordance with the{' '}
+                    I agree to Bright Links processing my data in accordance with the{' '}
                     <Link href="/privacy-policy" style={{ color: 'var(--color-turquoise)', fontWeight: 600 }}>Privacy Policy</Link>. *
                   </span>
                 </label>

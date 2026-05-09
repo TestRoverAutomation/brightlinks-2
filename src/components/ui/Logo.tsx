@@ -19,7 +19,7 @@ export default function Logo({ variant = 'dark', size = 'md' }: LogoProps) {
   return (
     <Link
       href="/"
-      aria-label="BrightLinks UK – Home"
+      aria-label="Bright Links – Home"
       style={{ display: 'inline-flex', alignItems: 'center', gap: s.gap, textDecoration: 'none' }}
     >
       {/* Chain link icon */}

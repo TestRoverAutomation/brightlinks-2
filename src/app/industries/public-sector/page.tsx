@@ -4,15 +4,13 @@ import { CheckCircle, Phone, ArrowRight } from 'lucide-react';
 import { SITE } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'IT Solutions for the Public Sector | BrightLinks UK',
+  title: 'IT Solutions for the Public Sector | Bright Links',
   description: 'G-Cloud accredited IT services for UK government, local councils and public bodies. Compliant, secure and framework-ready.',
 };
 
 const features = [
-  'G-Cloud 14 accredited supplier',
-  'PSN and HSCN compliant infrastructure',
-  'Public sector procurement frameworks (TPS2, YPO, RM6116)',
-  'Cyber Essentials & Cyber Essentials Plus support',
+  'Public sector procurement frameworks (TePAS2, CWMPAS, MSE DPS)',
+  'Cyber Essentials support',
   'GDPR & UK Government Security Policy Framework alignment',
   'Local authority and central government experience',
   'Social value commitments',
@@ -83,7 +81,7 @@ export default function PublicSectorPage() {
       <section className="section" style={{ background: 'var(--color-gray-50)' }}>
         <div className="container">
           <h2 style={{ fontWeight: 800, fontSize: '1.75rem', color: 'var(--color-navy)', textAlign: 'center', marginBottom: '3rem' }}>
-            Why public sector organisations choose BrightLinks
+            Why public sector organisations choose Bright Links
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1.5rem' }}>
             {benefits.map(b => (
@@ -114,7 +112,7 @@ export default function PublicSectorPage() {
             Speak to our public sector specialists today — no obligation, no jargon.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button className="btn btn-orange btn-lg" data-open-inquiry="true">Get a Free Quote</button>
+            <button className="btn btn-orange btn-lg" data-open-inquiry="true">Get a Quote</button>
             <a href={`tel:${SITE.phoneTel}`} className="btn btn-outline-white btn-lg">
               <Phone size={17} aria-hidden="true" /> {SITE.phone}
             </a>

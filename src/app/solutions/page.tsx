@@ -5,7 +5,7 @@ import { SITE } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'IT Solutions by Sector',
-  description: 'BrightLinks UK IT solutions for SMEs, enterprise, public sector, and education across the UK.',
+  description: 'Bright Links IT solutions for SMEs, enterprise, public sector, and education across the UK.',
 };
 
 const sectors = [
@@ -22,7 +22,7 @@ const sectors = [
     title: 'Enterprise',
     icon: '🏙️',
     desc: 'Complex, multi-site IT environments managed with precision, scale, and rigorous governance.',
-    points: ['Multi-site infrastructure management', 'Enterprise service desk (ITIL V4)', 'Security operations & SIEM', 'Dedicated delivery management'],
+    points: ['Multi-site infrastructure management', 'Enterprise service desk', 'Security operations & SIEM', 'Dedicated delivery management'],
     image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80',
   },
   {

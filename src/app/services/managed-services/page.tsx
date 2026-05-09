@@ -3,7 +3,7 @@ import ServicePageTemplate from '@/components/ServicePageTemplate';
 
 export const metadata: Metadata = {
   title: 'Managed IT Services',
-  description: 'BrightLinks UK managed IT services — 24/7 UK-based helpdesk, proactive monitoring, ITIL V4 aligned. Fully managed IT for UK businesses.',
+  description: 'Bright Links managed IT services — 24/7 UK-based helpdesk, proactive monitoring. Fully managed IT for UK businesses.',
 };
 
 export default function ManagedServicesPage() {
@@ -18,7 +18,7 @@ export default function ManagedServicesPage() {
         'Proactive monitoring & alerting',
         'Patch management & security updates',
         'Asset lifecycle management',
-        'ITIL V4 aligned service delivery',
+
         'Dedicated account manager',
         'Monthly reporting & business reviews',
         'On-site and remote support',
@@ -27,7 +27,7 @@ export default function ManagedServicesPage() {
         { title: 'UK-Based Only', desc: 'Our helpdesk operates from UK centres. No overseas call centres — ever.' },
         { title: 'Predictable Costs', desc: 'Fixed monthly pricing means no surprise bills. Budget with confidence.' },
         { title: 'Proactive, Not Reactive', desc: 'We fix problems before they impact your business through 24/7 monitoring.' },
-        { title: 'ITIL Certified Team', desc: 'Our engineers are ITIL V4 certified, ensuring consistent, quality service delivery.' },
+        { title: 'Experienced Team', desc: 'Our engineers bring deep expertise, ensuring consistent, quality service delivery.' },
       ]}
       relatedLinks={[
         { label: 'Cybersecurity', href: '/services/cybersecurity' },

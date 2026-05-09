@@ -3,8 +3,8 @@ import { Phone } from 'lucide-react';
 import { SITE } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Technology Partners | BrightLinks UK',
-  description: 'BrightLinks UK partners with the world\'s leading technology vendors to deliver best-in-class IT solutions to our clients.',
+  title: 'Technology Partners | Bright Links',
+  description: 'Bright Links partners with the world\'s leading technology vendors to deliver best-in-class IT solutions to our clients.',
 };
 
 const partners = [
@@ -128,7 +128,7 @@ export default function PartnersPage() {
             Work with a partner-accredited team that puts your needs first.
           </p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button className="btn btn-orange btn-lg" data-open-inquiry="true">Get a Free Quote</button>
+            <button className="btn btn-orange btn-lg" data-open-inquiry="true">Get a Quote</button>
             <a href={`tel:${SITE.phoneTel}`} className="btn btn-outline-white btn-lg">
               <Phone size={17} aria-hidden="true" /> {SITE.phone}
             </a>
