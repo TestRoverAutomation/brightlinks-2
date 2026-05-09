@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-GB" className={inter.variable}>
+    <html lang="en-GB" className={inter.variable} data-scroll-behavior="smooth">
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="theme-color" content="#1B2B6B" />

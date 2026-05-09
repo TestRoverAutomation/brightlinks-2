@@ -9,65 +9,30 @@ export const metadata: Metadata = {
 
 const frameworks = [
   {
-    name: 'Technology Products & Services 2 (TPS2)',
+    name: 'Technology Products & Associated Services 2 (TePAS2)',
     provider: 'Crown Commercial Service (CCS)',
     sectors: ['Central Government', 'Local Government', 'Healthcare', 'Blue Light', 'HE/FE', 'Education'],
     procurement: ['Direct Award', 'Mini Competition'],
     lots: [
-      'Lot 2: Hardware',
-      'Lot 5: Health and Social Care Technology',
-      'Lot 7: Sustainability & Circular IT',
       'Lot 8: Technology Catalogue',
     ],
     description: 'One of the UK\'s largest IT procurement frameworks, covering hardware, software and technology services for the entire public sector.',
   },
   {
-    name: 'G-Cloud 14',
-    provider: 'Crown Commercial Service (CCS)',
-    sectors: ['Central Government', 'Local Government', 'Healthcare', 'Blue Light', 'HE/FE', 'Education'],
-    procurement: ['Direct Award'],
-    lots: [
-      'Lot 2: Cloud Software',
-      'Lot 3: Cloud Support',
-    ],
-    description: 'The government\'s primary route for buying cloud-based services. BrightLinks is an approved G-Cloud supplier for cloud infrastructure and managed services.',
-  },
-  {
-    name: 'Network Services 3 (RM6116)',
-    provider: 'Crown Commercial Service (CCS)',
-    sectors: ['Central Government', 'Local Government', 'Healthcare', 'Blue Light'],
-    procurement: ['Direct Award', 'Mini Competition'],
-    lots: [
-      'Lot 1a: Wide Area Network / Data Access',
-      'Lot 2a: Local Area Network / Local Connectivity',
-      'Lot 4b: Digital Communication Services (UC)',
-      'Lot 4c: Contact Centres',
-    ],
-    description: 'Covers all connectivity and networking services including WAN, LAN, telephony and unified communications for public sector bodies.',
-  },
-  {
-    name: 'Total Technology Solutions',
-    provider: 'NHS North of England Commercial Procurement Collaborative (NOE CPC)',
-    sectors: ['Central Government', 'Local Government', 'Healthcare', 'Blue Light', 'HE/FE', 'Education'],
-    procurement: ['Direct Award', 'Mini Competition'],
+    name: 'Cwmpas IT Hardware',
+    provider: 'Cwmpas',
+    sectors: ['Single Organisation (Cwmpas)'],
+    procurement: ['Mini Competition'],
     lots: ['Single Lot Framework'],
-    description: 'An NHS-led framework providing a compliant route to purchase a broad range of IT hardware, software and managed services.',
+    description: 'A Cwmpas-led framework providing a compliant route for procuring IT hardware, supporting co-operative and community sector organisations.',
   },
   {
-    name: 'YPO 001161 — Sustainable Hardware, Software & Technology Services',
-    provider: 'YPO',
-    sectors: ['Central Government', 'Local Government', 'Healthcare', 'Blue Light', 'HE/FE', 'Education'],
-    procurement: ['Direct Award', 'Mini Competition'],
-    lots: ['Lot 2: Supply of New Hardware'],
-    description: 'A Yorkshire Purchasing Organisation framework for sustainable IT hardware and technology services, open to the wider public sector.',
-  },
-  {
-    name: 'Supply of Software Products & Associated Services',
-    provider: 'Kent County Council',
-    sectors: ['Central Government', 'Local Government', 'Healthcare', 'Blue Light', 'HE/FE', 'Education'],
-    procurement: ['Direct Award', 'Mini Competition'],
-    lots: ['Single Lot Framework'],
-    description: 'A compliant route to purchase software licences and associated support services across the public sector.',
+    name: 'MSE IT Hardware, Peripherals and Associated Services',
+    provider: 'Mid and South Essex NHS Foundation Trust (MSE)',
+    sectors: ['Healthcare'],
+    procurement: ['DPS'],
+    lots: ['IT Hardware, Peripherals and Associated Services'],
+    description: 'A Dynamic Purchasing System (DPS) for IT hardware, peripherals and associated services for NHS and healthcare organisations.',
   },
 ];
 
@@ -78,6 +43,7 @@ const sectorBadgeColors: Record<string, string> = {
   'Blue Light': '#DC2626',
   'HE/FE': '#7C3AED',
   'Education': '#D97706',
+  'Single Organisation (Cwmpas)': '#047857',
 };
 
 export default function FrameworksPage() {

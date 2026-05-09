@@ -9,15 +9,15 @@ export const metadata: Metadata = {
 
 const partners = [
   {
-    name: 'Microsoft',
+    name: 'Dell Technologies',
     tier: 'Gold Partner',
-    description: 'Certified Microsoft Partner for Microsoft 365, Azure, Teams, and the full Modern Workplace suite. We hold competencies in Cloud Productivity, Security and Small & Midmarket Cloud Solutions.',
-    category: 'Cloud & Productivity',
+    description: 'Gold reseller of Dell laptops, desktops, servers and storage solutions. From individual device procurement to full data centre refreshes.',
+    category: 'Hardware',
   },
   {
-    name: 'Dell Technologies',
-    tier: 'Authorised Partner',
-    description: 'Authorised reseller of Dell laptops, desktops, servers and storage solutions. From individual device procurement to full data centre refreshes.',
+    name: 'Lenovo',
+    tier: 'Gold Partner',
+    description: 'Full range of Lenovo ThinkPad, ThinkCentre and ThinkStation devices — ideal for corporate and education environments.',
     category: 'Hardware',
   },
   {
@@ -27,33 +27,21 @@ const partners = [
     category: 'Hardware',
   },
   {
-    name: 'Lenovo',
+    name: 'Microsoft',
     tier: 'Authorised Partner',
-    description: 'Full range of Lenovo ThinkPad, ThinkCentre and ThinkStation devices — ideal for corporate and education environments.',
-    category: 'Hardware',
+    description: 'Authorised Microsoft Partner for Microsoft 365, Azure, Teams, and the full Modern Workplace suite — covering Cloud Productivity, Security and Small & Midmarket Cloud Solutions.',
+    category: 'Cloud & Productivity',
   },
   {
     name: 'Sophos',
-    tier: 'Gold Partner',
-    description: 'Sophos Gold Partner delivering endpoint protection, firewall, email security and managed detection & response (MDR) services.',
+    tier: 'Authorised Partner',
+    description: 'Authorised Sophos partner delivering endpoint protection, firewall, email security and managed detection & response (MDR) services.',
     category: 'Cybersecurity',
-  },
-  {
-    name: 'Cisco',
-    tier: 'Select Partner',
-    description: 'Cisco networking, switching, wireless and collaboration solutions for enterprise and public sector environments.',
-    category: 'Networking',
   },
   {
     name: 'Veeam',
     tier: 'Silver Partner',
     description: 'Veeam Silver Partner for backup, recovery and data management — keeping your critical data protected across cloud and on-premises.',
-    category: 'Backup & Recovery',
-  },
-  {
-    name: 'Datto',
-    tier: 'Silver Partner',
-    description: 'Business continuity and disaster recovery solutions built for SME and mid-market organisations, with immutable cloud backup.',
     category: 'Backup & Recovery',
   },
 ];
